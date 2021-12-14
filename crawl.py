@@ -10,7 +10,7 @@ import pyperclip
 # chrome.exe --remote-debugging-port=9222 --user-data-dir="C:/temp"
 
 # crawl numbers of problems solved
-user_id = 'kzc123'
+user_id = ''
 res = requests.get(f'https://www.acmicpc.net/user/{user_id}')
 soup = bs(res.content, 'html.parser')
 problem_list = soup.find('div', class_='problem-list')
